@@ -17,6 +17,7 @@ services:
       - ./volumes/htpasswd:/etc/nginx/htpasswd
       - ./volumes/conf.d:/etc/nginx/conf.d
       - ./volumes/vhost.d:/etc/nginx/vhost.d
+      - ./volumes/logs/:/var/log/nginx
     networks:
       - proxy
 
